@@ -12,8 +12,7 @@ To create a new blog post:
 
 1. `clone` the repo
 1. Create new `branch`
-1. 
-
+1. It depends on
     - *If using a notebook:*
         1. Create a new notebook under the `notebooks` directory, named `YY-MM-DD-title.ipynb`
         1. Convert to a post by running `make` from main directory
