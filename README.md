@@ -13,11 +13,11 @@ To create a new blog post:
 1. `clone` the repo
 2. Create new `branch`
 3. 
-    - If using a notebook:
+    - *If using a notebook:*
         1. Create a new notebook under the `notebooks` directory, named `YY-MM-DD-title.ipynb`
         2. Convert to a post by running `make` from main directory
         3. Edit the metadata in the `_posts` directory as appropriate
-    - If the post is not a notebook:
+    - *If the post is not a notebook:*
         1. Create a new blog post in `_posts`, named `YY-MM-DD-title.md` directly
 4. `commit` changes and `push` branch back to `coecms/coecms.github.io`
 5. Open Pull Request and select CMS team member to review
