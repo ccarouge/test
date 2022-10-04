@@ -46,6 +46,6 @@ jobs:
           mkdocs build -f mkdocs.yml -d site
 
       - name: Deploy preview
-        uses: ccarouge/pr-preview-action@v1
+        uses: ccarouge/pr-preview-action@v1.1
         with:
           source-dir: site
