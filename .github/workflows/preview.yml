@@ -1,10 +1,9 @@
 name: Deploy PR preview
 
 on:
-  pull_request:
+  pull_request_target:
     types:
-      - opened
-      - reopened
+      - labeled
       - synchronize
       - closed
 
@@ -28,6 +27,7 @@ permissions:
 jobs:
   deploy-preview:
     runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'safe')
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -46,6 +46,6 @@ jobs:
           mkdocs build -f mkdocs.yml -d site
 
       - name: Deploy preview
-        uses: ccarouge/pr-preview-action@v1
+        uses: ccarouge/pr-preview-action@v1.2
         with:
           source-dir: site
