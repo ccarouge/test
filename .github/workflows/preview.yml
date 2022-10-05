@@ -49,3 +49,5 @@ jobs:
         uses: ccarouge/pr-preview-action@v2
         with:
           source-dir: site
+          action: deploy
+          pr-number: ${{github.event.number}}
