@@ -35,7 +35,7 @@ jobs:
             fs.writeFileSync('${{github.workspace}}/prnumber.zip', Buffer.from(download.data));
       - run: |
           unzip prnumber.zip
-          echo "pr-number=$(cat prnumber/prnumber.txt)" >> "$GITHUB_ENV"
+          echo "pr-number=$(cat prnumber.txt)" >> "$GITHUB_ENV"
         shell: bash
  
       - name: Checkout
