@@ -3,7 +3,7 @@ name: Close PR
 on:
   pull_request:
     types:
-      - close
+      - closed
 
 jobs:
   send-number:
