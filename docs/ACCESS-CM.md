@@ -2,6 +2,6 @@ Just an example
 
 Small change
 
-other change
+other
 
 test2
