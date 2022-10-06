@@ -35,7 +35,7 @@ jobs:
             fs.writeFileSync('${{github.workspace}}/pr.zip', Buffer.from(download.data));
       - run: |
           unzip pr.zip
-          echo "pr-number=$(cat NR)" >> "$GITHUB_ENV"
+          echo "pr-number=$(cat NB)" >> "$GITHUB_ENV"
         shell: bash
 
       - name: "Download built site"
@@ -65,4 +65,4 @@ jobs:
         with:
           source-dir: site
           action: deploy
-          pr-number: ${{env.pr-number}}
+          pr-number: ${{ env.pr-number }}
