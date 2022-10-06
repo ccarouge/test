@@ -1,6 +1,7 @@
 name: Deploy PR preview
 
 on:
+  workflow_run:
     workflows: ["Build PR preview"]
     types:
       - completed
