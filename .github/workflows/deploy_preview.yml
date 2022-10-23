@@ -68,7 +68,7 @@ jobs:
       - run: unzip pr_site.zip
 
       - name: Deploy preview
-        uses: ccarouge/pr-preview-action@v2
+        uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: site
           action: deploy
