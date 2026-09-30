@@ -9,3 +9,6 @@ A configuration for running CABLE spatial offline driven with 1 hourly CRU JRA f
 3. Clone this cable_example repository
 4. Modify the config.yaml file with the path to your CABLE executable.
 5. Run with payu: `payu run`. Note, `payu` must support the CABLE model driver (see https://github.com/payu-org/payu/releases/tag/1.0.30).
+
+
+Is it pushed if pushing this?
